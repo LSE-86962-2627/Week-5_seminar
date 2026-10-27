@@ -14,7 +14,10 @@ class Book(object):
 
 
     # Task 3 (teams of three only): add a method get_author() that returns the author
-
+    def get_author(self):
+        """Returns the author of the book."""
+        return self.author
+    
 
     # Task 4: add a method __str__() that returns e.g. 'Persuasion by Jane Austen'
 
@@ -28,5 +31,6 @@ book = Book('Persuasion', 'Jane Austen', 8.99)
 # print(book.get_price())    # Task 2
 
 # print(book.get_author())   # Task 3
+print(book.get_author())
 
 # print(book)                # Task 4
